@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-    <h1> Adinkra Symbols - Memory Game </h1>
-    <div id="game-board">
+    <div id="intro-screen">
+        <h2>Adinkra Symbols</h2>
+
+        <p>
+            Adinkra symbols are visual symbols from the Akan people of Ghana.
+            Each symbol represents a concept, proverb, or life philosophy.
+            Originating over 300 years ago, they were traditionally used by royalty
+            during important ceremonies.
+        </p>
+
+        <p>
+            Today, Adinkra symbols are recognized globally as powerful expressions
+            of African wisdom, culture, and identity.
+        </p>
+
         
-    </div> 
-    <button id="restart-btn">Restart Game</button>
+        <button class="skip-intro-btn">Skip Intro</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+        <h2> Adinkra Symbols Game </h2>
+        <div id="game-board">
+
+        </div>
+
+        <button id="restart-btn">Restart Game</button>
+
+        <div class="info-panel">
+
+            <ul id="matched-list"></ul>
+        </div>
+
+    </div>
 
     <script src="game.js"></script>
     <footer>
@@ -19,4 +49,5 @@
     </footer>
 
 </body>
+
 </html>
