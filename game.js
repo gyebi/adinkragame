@@ -123,7 +123,7 @@ function checkForMatch() {
       if (symbolData) {
         const li = document.createElement("li");
         li.innerHTML = `<strong>${symbolData.name}:</strong><br>${symbolData.meaning}`;
-        matchedList.appendChild(li);
+        matchedList.prepend(li);
       }
     }
 
