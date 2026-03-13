@@ -203,6 +203,23 @@ footer {
   display: none;
 }
 
+.game-instructions {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.game-instructions h2 {
+  text-align: center;
+}
+
+.game-instructions li {
+  margin: 8px 0;
+}
+
 @media (min-width: 768px) {
   :root {
     --board-size: 460px;
